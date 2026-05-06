@@ -417,7 +417,7 @@ namespace SourceGit.ViewModels
             if (_selectedCommits.Count == 0)
                 return;
 
-            if (_commits.Count == 0 || _selectedCommits.Count > 10)
+            if (_commits.Count == 0 || _selectedCommits.Count > 20)
             {
                 SelectedCommits = [];
                 return;
