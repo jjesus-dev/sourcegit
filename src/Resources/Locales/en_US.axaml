@@ -64,6 +64,7 @@
   <x:String x:Key="Text.BranchCM.CompareTwo" xml:space="preserve">Compare selected 2 branches</x:String>
   <x:String x:Key="Text.BranchCM.CompareWith" xml:space="preserve">Compare with...</x:String>
   <x:String x:Key="Text.BranchCM.CompareWithHead" xml:space="preserve">Compare with HEAD</x:String>
+  <x:String x:Key="Text.BranchCM.CompareWithUpstream" xml:space="preserve">Compare with ${0}$</x:String>
   <x:String x:Key="Text.BranchCM.CopyName" xml:space="preserve">Copy Branch Name</x:String>
   <x:String x:Key="Text.BranchCM.CreatePR" xml:space="preserve">Create PR...</x:String>
   <x:String x:Key="Text.BranchCM.CreatePRForUpstream" xml:space="preserve">Create PR for upstream ${0}$...</x:String>

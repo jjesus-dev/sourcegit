@@ -68,6 +68,7 @@
   <x:String x:Key="Text.BranchCM.CompareTwo" xml:space="preserve">比較所選的 2 個分支</x:String>
   <x:String x:Key="Text.BranchCM.CompareWith" xml:space="preserve">與分支或標籤進行比較...</x:String>
   <x:String x:Key="Text.BranchCM.CompareWithHead" xml:space="preserve">與目前 HEAD 比較</x:String>
+  <x:String x:Key="Text.BranchCM.CompareWithUpstream" xml:space="preserve">與 ${0}$ 比較</x:String>
   <x:String x:Key="Text.BranchCM.CopyName" xml:space="preserve">複製分支名稱</x:String>
   <x:String x:Key="Text.BranchCM.CreatePR" xml:space="preserve">建立拉取請求...</x:String>
   <x:String x:Key="Text.BranchCM.CreatePRForUpstream" xml:space="preserve">為上游分支 ${0}$ 建立拉取請求...</x:String>

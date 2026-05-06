@@ -732,6 +732,19 @@ namespace SourceGit.Views
                 }
 
                 menu.Items.Add(push);
+                menu.Items.Add(new MenuItem() { Header = "-" });
+
+                if (upstream != null)
+                {
+                    var compareWithUpstream = new MenuItem();
+                    compareWithUpstream.Header = App.Text("BranchCM.CompareWithUpstream", upstream.FriendlyName);
+                    compareWithUpstream.Icon = this.CreateMenuIcon("Icons.Compare");
+                    compareWithUpstream.Click += (_, _) =>
+                    {
+                        this.ShowWindow(new ViewModels.Compare(repo, upstream, branch));
+                    };
+                    menu.Items.Add(compareWithUpstream);
+                }
 
                 var compareWith = new MenuItem();
                 compareWith.Header = App.Text("BranchCM.CompareWith");
@@ -740,7 +753,6 @@ namespace SourceGit.Views
                 {
                     new ViewModels.CompareCommandPalette(repo, branch).Open();
                 };
-                menu.Items.Add(new MenuItem() { Header = "-" });
                 menu.Items.Add(compareWith);
             }
             else
@@ -848,6 +860,8 @@ namespace SourceGit.Views
                     }
                 }
 
+                menu.Items.Add(new MenuItem() { Header = "-" });
+
                 var compareWithCurrent = new MenuItem();
                 compareWithCurrent.Header = App.Text("BranchCM.CompareWithHead");
                 compareWithCurrent.Icon = this.CreateMenuIcon("Icons.Compare");
@@ -855,6 +869,19 @@ namespace SourceGit.Views
                 {
                     this.ShowWindow(new ViewModels.Compare(repo, branch, current));
                 };
+                menu.Items.Add(compareWithCurrent);
+
+                if (upstream != null)
+                {
+                    var compareWithUpstream = new MenuItem();
+                    compareWithUpstream.Header = App.Text("BranchCM.CompareWithUpstream", upstream.FriendlyName);
+                    compareWithUpstream.Icon = this.CreateMenuIcon("Icons.Compare");
+                    compareWithUpstream.Click += (_, _) =>
+                    {
+                        this.ShowWindow(new ViewModels.Compare(repo, upstream, branch));
+                    };
+                    menu.Items.Add(compareWithUpstream);
+                }
 
                 var compareWith = new MenuItem();
                 compareWith.Header = App.Text("BranchCM.CompareWith");
@@ -863,8 +890,6 @@ namespace SourceGit.Views
                 {
                     new ViewModels.CompareCommandPalette(repo, branch).Open();
                 };
-                menu.Items.Add(new MenuItem() { Header = "-" });
-                menu.Items.Add(compareWithCurrent);
                 menu.Items.Add(compareWith);
             }
 
