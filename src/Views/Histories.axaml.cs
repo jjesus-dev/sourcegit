@@ -133,6 +133,9 @@ namespace SourceGit.Views
         {
             base.OnSelectionChanged(e);
 
+            if (ItemsSource is not IList<Models.Commit> items)
+                return;
+
             var commits = new List<Models.Commit>();
             foreach (var o in SelectedItems)
             {
@@ -140,8 +143,22 @@ namespace SourceGit.Views
                     commits.Add(c);
             }
 
-            if (commits.Count > 0 && commits.Count < 3)
-                ScrollIntoView(commits[^1], null);
+            if (e.AddedItems.Count == 1)
+            {
+                ScrollIntoView(e.AddedItems[0], null);
+            }
+            else if (e.AddedItems.Count > 1 && e.AddedItems[0] is Models.Commit first)
+            {
+                var firstIndex = items.IndexOf(first);
+                if (firstIndex > 0)
+                {
+                    var prev = items[firstIndex - 1];
+                    if (commits.Contains(prev))
+                        ScrollIntoView(e.AddedItems[^1], null);
+                    else
+                        ScrollIntoView(first, null);
+                }
+            }
 
             if (!_ignoreSelectionChanged)
             {
