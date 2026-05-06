@@ -41,16 +41,19 @@ namespace SourceGit.AI
                 switch (completion.FinishReason)
                 {
                     case ChatFinishReason.Stop:
-                        onUpdate?.Invoke(string.Empty);
-                        onUpdate?.Invoke("# Assistant");
-                        if (completion.Content.Count > 0)
-                            onUpdate?.Invoke(completion.Content[0].Text);
-                        else
-                            onUpdate?.Invoke("[No content was generated.]");
+                        if (onUpdate != null)
+                        {
+                            onUpdate.Invoke(string.Empty);
+                            onUpdate.Invoke("# Assistant");
+                            if (completion.Content.Count > 0)
+                                onUpdate.Invoke(completion.Content[0].Text);
+                            else
+                                onUpdate.Invoke("[No content was generated.]");
 
-                        onUpdate?.Invoke(string.Empty);
-                        onUpdate?.Invoke("# Token Usage");
-                        onUpdate?.Invoke($"Total: {completion.Usage.TotalTokenCount}. Input: {completion.Usage.InputTokenCount}. Output: {completion.Usage.OutputTokenCount}");
+                            onUpdate.Invoke(string.Empty);
+                            onUpdate.Invoke("# Token Usage");
+                            onUpdate.Invoke($"Total: {completion.Usage.TotalTokenCount}. Input: {completion.Usage.InputTokenCount}. Output: {completion.Usage.OutputTokenCount}");
+                        }
                         break;
                     case ChatFinishReason.Length:
                         throw new Exception("The response was cut off because it reached the maximum length. Consider increasing the max tokens limit.");
