@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Azure.AI.OpenAI.Chat;
 using OpenAI.Chat;
 
 namespace SourceGit.AI
@@ -21,11 +22,6 @@ namespace SourceGit.AI
                 throw new Exception("Failed to fetch available models from this service. Please check your configuration and try again.");
 
             var options = new ChatCompletionOptions() { Tools = { ChatTools.GetDetailChangesInFile } };
-#pragma warning disable SCME0001
-            options.Patch.Set("$.thinking"u8, Encoding.UTF8.GetBytes("""{"type": "disabled"}"""));
-            options.Patch.Set("$.enable_thinking"u8, false);
-#pragma warning restore SCME0001
-
             var userMessageBuilder = new StringBuilder();
             userMessageBuilder
                 .AppendLine("Generate a commit message (follow the rule of conventional commit message) for given git repository.")
@@ -61,7 +57,15 @@ namespace SourceGit.AI
                         throw new Exception("The response was cut off because it reached the maximum length. Consider increasing the max tokens limit.");
                     case ChatFinishReason.ToolCalls:
                         {
-                            messages.Add(new AssistantChatMessage(completion));
+                            var message = new AssistantChatMessage(completion);
+#pragma warning disable AOAI001
+#pragma warning disable SCME0001
+                            var reasoning = completion.GetMessageReasoningContent();
+                            if (!string.IsNullOrEmpty(reasoning))
+                                message.Patch.Set("$.reasoning_content"u8, reasoning);
+#pragma warning restore SCME0001
+#pragma warning restore AOAI001
+                            messages.Add(message);
 
                             foreach (var call in completion.ToolCalls)
                             {
