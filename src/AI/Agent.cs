@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Azure.AI.OpenAI.Chat;
 using OpenAI.Chat;
 
 namespace SourceGit.AI
@@ -58,13 +57,11 @@ namespace SourceGit.AI
                     case ChatFinishReason.ToolCalls:
                         {
                             var message = new AssistantChatMessage(completion);
-#pragma warning disable AOAI001
 #pragma warning disable SCME0001
-                            var reasoning = completion.GetMessageReasoningContent();
-                            if (!string.IsNullOrEmpty(reasoning))
+                            var hasReasoningContent = completion.Patch.TryGetValue("$.choices[0].message.reasoning_content"u8, out string reasoning);
+                            if (hasReasoningContent)
                                 message.Patch.Set("$.reasoning_content"u8, reasoning);
 #pragma warning restore SCME0001
-#pragma warning restore AOAI001
                             messages.Add(message);
 
                             foreach (var call in completion.ToolCalls)
