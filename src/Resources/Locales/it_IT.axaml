@@ -191,7 +191,6 @@
   <x:String x:Key="Text.CommitMessageTextBox.Placeholder" xml:space="preserve">Inserisci il messaggio di commit. Usa una riga vuota per separare oggetto e descrizione!</x:String>
   <x:String x:Key="Text.CommitMessageTextBox.SubjectCount" xml:space="preserve">OGGETTO</x:String>
   <x:String x:Key="Text.Compare" xml:space="preserve">Confronto</x:String>
-  <x:String x:Key="Text.Compare.WithHead" xml:space="preserve">Confronta con HEAD</x:String>
   <x:String x:Key="Text.Configure" xml:space="preserve">Configura Repository</x:String>
   <x:String x:Key="Text.Configure.CommitMessageTemplate" xml:space="preserve">TEMPLATE DI COMMIT</x:String>
   <x:String x:Key="Text.Configure.CommitMessageTemplate.BuiltinVars" xml:space="preserve">Parametri integrati:

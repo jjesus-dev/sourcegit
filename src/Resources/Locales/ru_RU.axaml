@@ -205,7 +205,6 @@
   <x:String x:Key="Text.CommitMessageTextBox.Placeholder" xml:space="preserve">Введите сообщение ревизии. Пожалуйста, используйте пустые строки для разделения субъекта и описания!</x:String>
   <x:String x:Key="Text.CommitMessageTextBox.SubjectCount" xml:space="preserve">СУБЪЕКТ</x:String>
   <x:String x:Key="Text.Compare" xml:space="preserve">Сравнить</x:String>
-  <x:String x:Key="Text.Compare.WithHead" xml:space="preserve">Сравнить с ГОЛОВОЙ</x:String>
   <x:String x:Key="Text.Configure" xml:space="preserve">Настройка репозитория</x:String>
   <x:String x:Key="Text.Configure.CommitMessageTemplate" xml:space="preserve">ШАБЛОН РЕВИЗИИ</x:String>
   <x:String x:Key="Text.Configure.CommitMessageTemplate.BuiltinVars" xml:space="preserve">Встроенные параметры: 

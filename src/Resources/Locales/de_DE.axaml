@@ -192,7 +192,6 @@
   <x:String x:Key="Text.CommitMessageTextBox.Placeholder" xml:space="preserve">Commit-Nachricht eingeben. Leerzeile zum Trennen von Betreff und Beschreibung verwenden!</x:String>
   <x:String x:Key="Text.CommitMessageTextBox.SubjectCount" xml:space="preserve">BETREFF</x:String>
   <x:String x:Key="Text.Compare" xml:space="preserve">Vergleichen</x:String>
-  <x:String x:Key="Text.Compare.WithHead" xml:space="preserve">Vergleichen mit HEAD</x:String>
   <x:String x:Key="Text.Configure" xml:space="preserve">Repository-Einstellungen</x:String>
   <x:String x:Key="Text.Configure.CommitMessageTemplate" xml:space="preserve">COMMIT-VORLAGE</x:String>
   <x:String x:Key="Text.Configure.CommitMessageTemplate.BuiltinVars" xml:space="preserve">Vordefinierte Parameter:

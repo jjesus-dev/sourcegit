@@ -6,7 +6,7 @@ This document shows the translation status of each locale file in the repository
 
 ### ![en_US](https://img.shields.io/badge/en__US-%E2%88%9A-brightgreen)
 
-### ![de__DE](https://img.shields.io/badge/de__DE-95.76%25-yellow)
+### ![de__DE](https://img.shields.io/badge/de__DE-95.75%25-yellow)
 
 <details>
 <summary>Missing keys in de_DE.axaml</summary>
@@ -68,7 +68,7 @@ This document shows the translation status of each locale file in the repository
 
 </details>
 
-### ![fr__FR](https://img.shields.io/badge/fr__FR-89.70%25-yellow)
+### ![fr__FR](https://img.shields.io/badge/fr__FR-89.79%25-yellow)
 
 <details>
 <summary>Missing keys in fr_FR.axaml</summary>
@@ -99,7 +99,6 @@ This document shows the translation status of each locale file in the repository
 - Text.CommandPalette.RevisionFiles
 - Text.CommitMessageTextBox.Column
 - Text.CommitMessageTextBox.Placeholder
-- Text.Compare.WithHead
 - Text.Configure.Git.AskBeforeAutoUpdatingSubmodules
 - Text.ConfigureCustomActionControls.StringFormatter
 - Text.ConfigureCustomActionControls.StringFormatter.Tip
@@ -178,7 +177,7 @@ This document shows the translation status of each locale file in the repository
 
 </details>
 
-### ![id__ID](https://img.shields.io/badge/id__ID-87.58%25-yellow)
+### ![id__ID](https://img.shields.io/badge/id__ID-87.66%25-yellow)
 
 <details>
 <summary>Missing keys in id_ID.axaml</summary>
@@ -214,7 +213,6 @@ This document shows the translation status of each locale file in the repository
 - Text.CommitCM.Drop
 - Text.CommitMessageTextBox.Column
 - Text.CommitMessageTextBox.Placeholder
-- Text.Compare.WithHead
 - Text.Configure.CommitMessageTemplate.BuiltinVars
 - Text.Configure.Git.AskBeforeAutoUpdatingSubmodules
 - Text.Configure.Git.ConventionalTypesOverride
@@ -412,7 +410,7 @@ This document shows the translation status of each locale file in the repository
 
 </details>
 
-### ![ko__KR](https://img.shields.io/badge/ko__KR-87.88%25-yellow)
+### ![ko__KR](https://img.shields.io/badge/ko__KR-87.97%25-yellow)
 
 <details>
 <summary>Missing keys in ko_KR.axaml</summary>
@@ -447,7 +445,6 @@ This document shows the translation status of each locale file in the repository
 - Text.CommandPalette.RevisionFiles
 - Text.CommitMessageTextBox.Column
 - Text.CommitMessageTextBox.Placeholder
-- Text.Compare.WithHead
 - Text.Configure.Git.AskBeforeAutoUpdatingSubmodules
 - Text.Configure.Git.ConventionalTypesOverride
 - Text.ConfigureCustomActionControls.StringFormatter
@@ -540,7 +537,7 @@ This document shows the translation status of each locale file in the repository
 
 </details>
 
-### ![pt__BR](https://img.shields.io/badge/pt__BR-66.57%25-red)
+### ![pt__BR](https://img.shields.io/badge/pt__BR-66.63%25-red)
 
 <details>
 <summary>Missing keys in pt_BR.axaml</summary>
@@ -606,7 +603,6 @@ This document shows the translation status of each locale file in the repository
 - Text.CommitMessageTextBox.Column
 - Text.CommitMessageTextBox.Placeholder
 - Text.CommitMessageTextBox.SubjectCount
-- Text.Compare.WithHead
 - Text.Configure.CommitMessageTemplate.BuiltinVars
 - Text.Configure.CustomAction.Arguments.Tip
 - Text.Configure.CustomAction.InputControls
@@ -890,7 +886,7 @@ This document shows the translation status of each locale file in the repository
 
 </details>
 
-### ![ta__IN](https://img.shields.io/badge/ta__IN-68.59%25-red)
+### ![ta__IN](https://img.shields.io/badge/ta__IN-68.66%25-red)
 
 <details>
 <summary>Missing keys in ta_IN.axaml</summary>
@@ -980,7 +976,6 @@ This document shows the translation status of each locale file in the repository
 - Text.CommitMessageTextBox.Column
 - Text.CommitMessageTextBox.Placeholder
 - Text.CommitMessageTextBox.SubjectCount
-- Text.Compare.WithHead
 - Text.Configure.CommitMessageTemplate.BuiltinVars
 - Text.Configure.CustomAction.Arguments.Tip
 - Text.Configure.CustomAction.InputControls
@@ -1209,7 +1204,7 @@ This document shows the translation status of each locale file in the repository
 
 </details>
 
-### ![uk__UA](https://img.shields.io/badge/uk__UA-69.39%25-red)
+### ![uk__UA](https://img.shields.io/badge/uk__UA-69.46%25-red)
 
 <details>
 <summary>Missing keys in uk_UA.axaml</summary>
@@ -1299,7 +1294,6 @@ This document shows the translation status of each locale file in the repository
 - Text.CommitMessageTextBox.Column
 - Text.CommitMessageTextBox.Placeholder
 - Text.CommitMessageTextBox.SubjectCount
-- Text.Compare.WithHead
 - Text.Configure.CommitMessageTemplate.BuiltinVars
 - Text.Configure.CustomAction.Arguments.Tip
 - Text.Configure.CustomAction.InputControls
