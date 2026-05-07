@@ -126,7 +126,14 @@ namespace SourceGit.Views
             base.OnPropertyChanged(change);
 
             if (change.Property == SelectedCommitsProperty && IsLoaded && !_ignoreSelectionChanged)
-                ApplySelection();
+            {
+                if (change.OldValue is List<Models.Commit> { Count: 1 } old &&
+                    change.NewValue is List<Models.Commit> { Count: 1 } cur &&
+                    old[0] == cur[0])
+                    ScrollIntoView(old[0], null);
+                else
+                    ApplySelection();
+            }
         }
 
         protected override void OnSelectionChanged(SelectionChangedEventArgs e)
