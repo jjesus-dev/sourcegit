@@ -59,7 +59,7 @@ namespace SourceGit.ViewModels
             // Sub-CommandPalettes
             _cmds.Add(new("Blame", "blame", "Blame", new BlameCommandPalette(repo.FullPath)));
             _cmds.Add(new("Checkout", "checkout", "Check", new CheckoutCommandPalette(repo)));
-            _cmds.Add(new("Compare.WithHead", "compare", "Compare", new CompareCommandPalette(repo, null)));
+            _cmds.Add(new("Compare", "compare", "Compare", new CompareCommandPalette(repo, null)));
             _cmds.Add(new("FileHistory", "history", "Histories", new FileHistoryCommandPalette(repo.FullPath)));
             _cmds.Add(new("Merge", "merge", "Merge", new MergeCommandPalette(repo)));
             _cmds.Add(new("OpenFile", "open", "OpenWith", new OpenFileCommandPalette(repo.FullPath)));
