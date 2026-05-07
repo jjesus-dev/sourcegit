@@ -684,6 +684,7 @@
   <x:String x:Key="Text.Preferences.Git.UseLibsecret" xml:space="preserve">使用 git-credential-libsecret 取代 git-credential-manager</x:String>
   <x:String x:Key="Text.Preferences.Git.User" xml:space="preserve">使用者名稱</x:String>
   <x:String x:Key="Text.Preferences.Git.User.Placeholder" xml:space="preserve">預設 Git 使用者名稱</x:String>
+  <x:String x:Key="Text.Preferences.Git.UseStashAndReapplyByDefault" xml:space="preserve">在檢出或合併分支時，預設擱置變更並自動復原</x:String>
   <x:String x:Key="Text.Preferences.Git.Version" xml:space="preserve">Git 版本</x:String>
   <x:String x:Key="Text.Preferences.GPG" xml:space="preserve">GPG 簽章</x:String>
   <x:String x:Key="Text.Preferences.GPG.CommitEnabled" xml:space="preserve">啟用提交簽章</x:String>
