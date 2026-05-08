@@ -23,7 +23,6 @@
   <x:String x:Key="Text.AIAssistant.Tip" xml:space="preserve">AI를 사용하여 커밋 메시지 생성</x:String>
   <x:String x:Key="Text.App.Hide" xml:space="preserve">SourceGit 숨기기</x:String>
   <x:String x:Key="Text.App.ShowAll" xml:space="preserve">모두 보기</x:String>
-  <x:String x:Key="Text.Apply" xml:space="preserve">패치</x:String>
   <x:String x:Key="Text.Apply.File" xml:space="preserve">패치 파일:</x:String>
   <x:String x:Key="Text.Apply.File.Placeholder" xml:space="preserve">적용할 .patch 파일을 선택하세요</x:String>
   <x:String x:Key="Text.Apply.IgnoreWS" xml:space="preserve">공백 변경 사항 무시</x:String>
